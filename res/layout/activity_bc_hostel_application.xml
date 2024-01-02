@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BcHostelApplicationActivity">
+
+    <LinearLayout
+        android:id="@+id/onlineApplication"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/thickblue">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="serif"
+            android:text="Online Application"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online Application form for Admission into BC welfare Hostel, Govt.TS"
+        android:textColor="@color/litblue"
+        android:textSize="15sp"
+        android:layout_below="@id/onlineApplication"
+        android:layout_margin="10dp"
+        android:autoLink="web" />
+
+    <ImageView
+        android:id="@+id/bcHostelImg"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:padding="3dp"
+        android:src="@drawable/hostel_icon"
+        android:layout_below="@id/textView"/>
+
+    <TextView
+        android:id="@+id/applyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to Apply"
+        android:textColor="@color/litblue"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_below="@id/bcHostelImg"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>!
+
+    <ImageView
+        android:id="@+id/linkImageView"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:padding="3dp"
+        android:src="@drawable/apply_now_img"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/applyTextView"/>
+
+</RelativeLayout>

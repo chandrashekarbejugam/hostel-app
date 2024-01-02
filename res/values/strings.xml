@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RollBook</string>
+
+    <string-array name="LocationList">
+        <!-- <item>Location</item> !-->
+        <item>Medipally</item>
+        <item>LB nagar</item>
+        <item>Gatkesar</item>
+        <item>Agraharam</item>
+        <item>Vemulawada</item>
+        <item>Alugunur</item>
+        <item>Nadergul</item>
+
+    </string-array>
+
+    <string name="location_prompt">Select a location</string>
+    <string-array name="selectLocation">
+        <item>select a Location</item>
+    </string-array>
+
+</resources>
+

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/topToolLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/thickblue">
+
+        <TextView
+            android:id="@+id/hiTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif"
+            android:text="Hi,"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userNameMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@id/hiTxt"
+            android:fontFamily="serif"
+            android:text="user"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/account_circle" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/attendenceCard"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/topToolLayout"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="17dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/attendence"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendence"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/litblue"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notification_card"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/topToolLayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="17dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/chat_notification"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:layout_gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/litblue"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scholarshipDetails"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/attendenceCard"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
+        app:cardCornerRadius="17dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/scholarship_form" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Scholarship details"
+            android:textColor="@color/litblue"
+            android:textSize="19sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bcHostelApplication"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:layout_below="@id/notification_card"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="17dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/devices"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/bcHostelTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Application"
+            android:textSize="18sp"
+            android:textColor="@color/litblue"
+            android:padding="2dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bc Welfare Hostel"
+            android:textSize="13dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/bcHostelTxt"
+            android:textColor="@color/litblue"
+            android:fontFamily="sans-serif-condensed"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

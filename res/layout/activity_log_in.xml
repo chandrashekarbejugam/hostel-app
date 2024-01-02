@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LogInActivity">
+
+   <TextView
+       android:id="@+id/LogInText"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="LogIn"
+       android:textSize="40dp"
+       android:textColor="@color/thickblue"
+       android:fontFamily="sans-serif-condensed"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"/>
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/loginNameTextBox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/LogInText"
+       android:layout_marginTop="30dp"
+       android:background="@color/white"
+       app:boxStrokeColor="@color/lite_black"
+       android:hint="Email"
+       android:textColorHint="@color/lite_black"
+       app:hintTextColor="@color/lite_black"
+       android:layout_marginHorizontal="28dp"
+
+       android:padding="12dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/loginEmailId"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:inputType="text"
+          android:textColor="@color/lite_black"
+          tools:ignore="TouchTargetSizeCheck"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/loginEmailTextBox"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/loginNameTextBox"
+       android:layout_marginTop="10dp"
+       android:background="@color/white"
+       app:boxStrokeColor="@color/lite_black"
+       android:hint="Password"
+       android:textColorHint="@color/lite_black"
+       app:hintTextColor="@color/lite_black"
+       android:layout_marginHorizontal="28dp"
+       android:padding="12dp">
+
+      <com.google.android.material.textfield.TextInputEditText
+          android:id="@+id/loginPasswordId"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:inputType="text"
+          android:textColor="@color/lite_black"
+          tools:ignore="TouchTargetSizeCheck"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <TextView
+       android:id="@+id/forgetPasswordId"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="forget password"
+       android:textColor="@color/litblue"
+       android:layout_below="@id/loginEmailTextBox"
+       android:layout_marginTop="10dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="40dp"/>
+
+   <LinearLayout
+       android:id="@+id/logInBtn"
+       android:layout_width="120dp"
+       android:layout_height="60dp"
+       android:gravity="center"
+       android:layout_centerHorizontal="true"
+       android:layout_marginHorizontal="40dp"
+       android:layout_marginBottom="5dp"
+       android:background="@drawable/corves_background"
+       android:layout_above="@id/signupextLayout">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="LogIn"
+          android:textSize="22dp"
+          android:textStyle="bold"
+          android:textColor="@color/white"
+          android:fontFamily="sans-serif-condensed"
+          android:layout_centerHorizontal="true" />
+
+   </LinearLayout>
+
+
+   <LinearLayout
+       android:id="@+id/signupextLayout"
+       android:layout_width="wrap_content"
+       android:layout_height="30dp"
+       android:layout_marginBottom="40dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="19dp">
+
+      <TextView
+          android:id="@+id/account_dont_have"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="don't have account/"
+          android:textColor="@color/litblue" />
+
+      <TextView
+          android:id="@+id/sigUpText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Signup"
+          android:textSize="16dp"
+          android:textColor="@color/linkscolor" />
+
+   </LinearLayout>
+
+</RelativeLayout>
+

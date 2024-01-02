@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/RegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="40dp"
+        android:textColor="@color/thickblue"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RegisterText"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:boxStrokeColor="@color/lite_black"
+            android:hint="Name"
+            android:textColorHint="@color/lite_black"
+            app:hintTextColor="@color/lite_black"
+            android:layout_marginHorizontal="28dp"
+
+            android:padding="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textColor="@color/lite_black"
+                tools:ignore="TouchTargetSizeCheck"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerName"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:boxStrokeColor="@color/lite_black"
+        android:hint="Email"
+        android:textColorHint="@color/lite_black"
+        app:hintTextColor="@color/lite_black"
+        android:layout_marginHorizontal="28dp"
+
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@color/lite_black"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerEmail"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:boxStrokeColor="@color/lite_black"
+        android:hint="Password"
+        android:textColorHint="@color/lite_black"
+        app:hintTextColor="@color/lite_black"
+        android:layout_marginHorizontal="28dp"
+
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@color/lite_black"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registerConformPasword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPassword"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:boxStrokeColor="@color/lite_black"
+        android:hint="Conform Password"
+        android:textColorHint="@color/lite_black"
+        app:hintTextColor="@color/lite_black"
+        android:layout_marginHorizontal="28dp"
+
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userConformPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@color/lite_black"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/registerConformPasword"
+        android:entries="@array/LocationList"
+        android:prompt="@string/location_prompt"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:id="@+id/submitBtn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+       android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/corves_background"
+        android:layout_below="@id/locationSpinner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/loginTextLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@id/submitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/account_dont_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have account/"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Login"
+            android:textSize="16dp"
+            android:textColor="@color/linkscolor" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

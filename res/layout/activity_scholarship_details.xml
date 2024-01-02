@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ScholarshipDetailsActivity">
+
+    <LinearLayout
+        android:id="@+id/scholarship"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/thickblue">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/scholarship_Heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="serif"
+            android:text="Scholarship Detailes"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/scholarship">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ScholarshipList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCHOLARSHIP FORMS LIST"
+        android:textColor="@color/thickblue"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+
+
+            <TextView
+                android:id="@+id/fresh_Application_forms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Application Forms"
+                android:textSize="18sp"
+                android:textColor="@color/thickblue"
+                android:textStyle="bold"
+                android:layout_below="@id/ScholarshipList"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/latest_Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1)  Latest Passport size photograph"
+                android:textSize="17sp"
+                android:textColor="@color/litblue"
+                android:layout_below="@id/fresh_Application_forms"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/aadhar_Card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2)  Aadhaar Card of the Student"
+                android:textSize="17sp"
+                android:textColor="@color/litblue"
+                android:layout_below="@id/latest_Photo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/bank_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3)  Bank Pass Book first page"
+                android:textSize="17sp"
+                android:textColor="@color/litblue"
+                android:layout_below="@id/aadhar_Card"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/bonafied_Certificate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4)  Study/Bonafide Certificate for the SEVEN consecutive years of study."
+                android:textSize="17sp"
+                android:textColor="@color/litblue"
+                android:layout_below="@id/bank_book"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/cet_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5)  CET (Common Entrance Test) allotment order for CET courses"
+                android:textSize="17sp"
+                android:textColor="@color/litblue"
+                android:layout_below="@id/bonafied_Certificate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"/>
+
+            <TextView
+                android:id="@+id/renewal_Scholarship_List"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renewal Scholarship Forms"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/thickblue"
+                android:layout_below="@id/cet_form"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"/>
+    <TextView
+        android:id="@+id/bonafied_Form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1)  Study/Bonafied Certificate"
+        android:textSize="17sp"
+        android:textColor="@color/litblue"
+        android:layout_below="@id/renewal_Scholarship_List"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/incomeForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2)  Income Certificate"
+        android:textSize="17sp"
+        android:textColor="@color/litblue"
+        android:layout_below="@id/bonafied_Form"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3)  Marks Memo"
+        android:textSize="17sp"
+        android:textColor="@color/litblue"
+        android:layout_below="@id/incomeForm"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

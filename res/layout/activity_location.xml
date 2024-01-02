@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LocationActivity">
+
+    <TextView
+        android:id="@+id/whatsLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What's your loaction?"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="we need your location to conform where you are."
+        android:textSize="18dp"
+        android:textColor="@color/lite_black"
+        android:textStyle="italic"
+        android:layout_below="@id/whatsLocation"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/locationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/descriptionText"
+        android:layout_marginTop="50dp">
+
+
+    <Spinner
+        android:id="@+id/locationSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/black"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="45dp"
+        android:entries="@array/LocationList"
+        android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_below="@id/locationTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="40dp"/>
+
+    <LinearLayout
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:background="@drawable/corves_background"
+        android:layout_above="@id/backButton">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/backButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="25dp"
+        android:textColor="@color/litblue"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp"/>
+
+
+</RelativeLayout>
+
+

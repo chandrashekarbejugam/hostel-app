@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AttendActivity">
+
+    <LinearLayout
+        android:id="@+id/attendenceTopTool"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/thickblue">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="13dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="serif"
+            android:text="Attendence"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/todaysAttendence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/attendenceTopTool"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Today's Attendence"
+            android:textSize="25dp"
+            android:textColor="@color/litblue"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/checkboxId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green_btn"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/awayToLoction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyLayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Attendance Not submited!"
+            android:textSize="20dp"
+            android:textColor="@color/red"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_marginTop="90dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(You may away from the hostel)"
+            android:textSize="15dp"
+            android:textColor="@color/ash"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/fetchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todaysAttendence"
+        android:layout_marginLeft="22dp"
+        android:visibility="gone"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/checkingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fetching hostel location"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/litblue"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/fetchProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/fetchTick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/done_24"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/verifyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fetchLayout"
+        android:layout_marginLeft="22dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifying your location"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/litblue"
+            android:visibility="visible"/>
+
+        <ProgressBar
+            android:id="@+id/verifyProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:id="@+id/verifyTick"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/done_24"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nearToLoction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Submitted Successfully!"
+        android:textSize="20dp"
+        android:textColor="@color/green_btn"
+        android:layout_below="@id/verifyLayout"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="90dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/corves_background"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="SUBMIT"
+            android:layout_marginTop="9dp"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
